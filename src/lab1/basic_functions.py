@@ -1,7 +1,9 @@
 def echo_string():
     s = input("Enter text: ")
-    print(s)
-    return s
+    s_cap = s.capitalize()
+    s_upper = s_cap.upper()
+    s_lower = s_cap.lower()
+    return s_upper, s_lower, s_cap
 
 def sum_two_numbers(a, b):
     if isinstance(a, int) and isinstance(b, int):
